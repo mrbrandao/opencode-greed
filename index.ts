@@ -70,4 +70,7 @@ export const GreedPlugin: Plugin = async (_input, options) => {
 };
 
 export const server = GreedPlugin;
-export default GreedPlugin;
+export default {
+  id: "opencode-greed",
+  server: GreedPlugin,
+};
