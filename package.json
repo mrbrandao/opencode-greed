@@ -1,0 +1,20 @@
+{
+  "name": "opencode-greed",
+  "version": "0.1.0",
+  "description": "A green OpenCode theme with configurable agent colors",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbrandao/opencode-greed.git"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "theme"
+  ],
+  "author": "mrbrandao",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*"
+  }
+}
