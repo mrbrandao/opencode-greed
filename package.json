@@ -1,8 +1,16 @@
 {
   "name": "opencode-greed",
   "version": "0.1.0",
-  "description": "A green OpenCode theme with configurable agent colors",
+  "description": "OpenCode theme and non-destructive profile-based agent router",
+  "type": "module",
   "main": "index.ts",
+  "scripts": {
+    "smoke": "bun smoke.ts"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrbrandao/opencode-greed.git"
@@ -10,7 +18,9 @@
   "keywords": [
     "opencode",
     "opencode-plugin",
-    "theme"
+    "theme",
+    "agent-routing",
+    "profiles"
   ],
   "author": "mrbrandao",
   "license": "MIT",
@@ -19,5 +29,13 @@
   ],
   "peerDependencies": {
     "@opencode-ai/plugin": "*"
+  },
+  "optionalDependencies": {
+    "@opentui/core": "0.5.8",
+    "@opentui/solid": "0.5.8",
+    "solid-js": "1.9.12"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1"
   }
 }
